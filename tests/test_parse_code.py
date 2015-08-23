@@ -30,6 +30,11 @@ def can_validate_code(code):
     expect(parsed_code).not_to_be_null()
     expect(parsed_code).to_be_instance_of(dict)
     expect(parsed_code['code']).to_equal(code)
+    expect(parsed_code).to_include('reference')
+    expect(parsed_code).to_include('city')
+    expect(parsed_code).to_include('state')
+    expect(parsed_code).to_include('country')
+    expect(parsed_code).to_include('edge_number')
 
 
 def test_can_return_all_codes():

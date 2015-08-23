@@ -50,7 +50,7 @@ NODES = {
         'country': 'United States of America',
     },
 
-    'lax1': {
+    'LAX1': {
         'reference': {
             'name': 'los angeles international airport',
             'latitude': 33.9425011,
@@ -349,7 +349,7 @@ def parse(code):
         return None
 
     return_node = {}
-    node.update(return_node)
+    return_node.update(node)
     return_node['code'] = code
 
     return return_node
