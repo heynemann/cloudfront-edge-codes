@@ -11,6 +11,7 @@
 from cloudfront_edge_codes.version import __version__  # NOQA
 
 
+# EDGE Codes retrieved from https://forums.aws.amazon.com/thread.jspa?messageID=671690&#671690
 # LAT/LONG values retrieved from https://www.world-airport-codes.com
 NODES = {
     'IAD2': {
