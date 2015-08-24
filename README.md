@@ -17,6 +17,7 @@ I got the informaton from two different places:
 
 Using it is very simple:
 
+```Python
     In [1]: from cloudfront_edge_codes import parse
 
     In [2]: edge_code = "IAD2"
@@ -31,11 +32,13 @@ Using it is very simple:
                        'longitude': -77.4558029,
                        'name': 'Dulles International Airport'},
          'state': 'Virginia'}
+```
 
 ## Which edge codes are supported?
 
 You can verify that yourself with:
 
+```Python
     In [1]: from cloudfront_edge_codes import NODES
 
     In [2]: print(sorted(NODES.keys()))
@@ -62,6 +65,7 @@ You can verify that yourself with:
          'SFO',
          'SIN',
          'STL']
+```
 
 ## There's a node missing!
 
