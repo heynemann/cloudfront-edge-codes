@@ -23,13 +23,14 @@ Using it is very simple:
 
     In [7]: print(parse(edge_code))
         {'city': 'Ashburn',
-        'code': 'IAD2',
-        'country': 'United States of America',
-        'edge_number': 2,
-        'reference': {'latitude': 38.9445,
-                    'longitude': -77.4558029,
-                    'name': 'Dulles International Airport'},
-        'state': 'Virginia'}
+         'code': 'IAD2',
+         'country': 'United States of America',
+         'name': 'IAD',
+         'number': 2,
+         'reference': {'latitude': 38.9445,
+                       'longitude': -77.4558029,
+                       'name': 'Dulles International Airport'},
+         'state': 'Virginia'}
 
 ## Which edge codes are supported?
 
@@ -38,33 +39,29 @@ You can verify that yourself with:
     In [1]: from cloudfront_edge_codes import NODES
 
     In [2]: print(sorted(NODES.keys()))
-        ['AMS1',
-        'ARN1',
-        'CDG3',
-        'DFW3',
-        'DUB2',
-        'EWR2',
-        'FRA2',
-        'GRU1',
-        'HGK1',
-        'HKG1',
-        'IAD2',
-        'IND6',
-        'JAX1',
-        'JFK1',
-        'JFK5',
-        'LAX1',
-        'LAX3',
-        'LHR3',
-        'MIA3',
-        'MXP4',
-        'NRT4',
-        'NRT52',
-        'SEA4',
-        'SFO4',
-        'SFO5',
-        'SIN2',
-        'STL2']
+        ['AMS',
+         'ARN',
+         'CDG',
+         'DFW',
+         'DUB',
+         'EWR',
+         'FRA',
+         'GRU',
+         'HGK',
+         'HKG',
+         'IAD',
+         'IND',
+         'JAX',
+         'JFK',
+         'LAX',
+         'LHR',
+         'MIA',
+         'MXP',
+         'NRT',
+         'SEA',
+         'SFO',
+         'SIN',
+         'STL']
 
 ## There's a node missing!
 
