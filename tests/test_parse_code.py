@@ -20,6 +20,14 @@ class ParseEdgeCodeTestCase(TestCase):
         expect(result).not_to_be_null()
         expect(result).to_be_instance_of(dict)
 
+        result = parse("NRT12-C1")
+        expect(result).not_to_be_null()
+        expect(result).to_be_instance_of(dict)
+
+        result = parse("MIA3-C1")
+        expect(result).not_to_be_null()
+        expect(result).to_be_instance_of(dict)
+
     def test_returns_null_if_invalid_code(self):
         result = parse("WTF4")
         expect(result).to_be_null()

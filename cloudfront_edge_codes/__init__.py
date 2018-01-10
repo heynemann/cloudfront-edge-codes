@@ -287,7 +287,8 @@ def parse(code):
         return None
 
     node_name = code[:3]
-    node_number = int(code[3:])
+ 
+    node_number = int(code[3:].split('-')[0])
     node = NODES.get(node_name, None)
 
     if node is None:
